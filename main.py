@@ -1,5 +1,7 @@
 # Caesar Cipher challenge
 
+import math
+
 #simple greet function
 def greet():
   print('Welcome!')
@@ -27,9 +29,11 @@ greet_with(location='Tattooine', name='Grogu')
 #Write your code below this line 👇
 
 def paint_calc(height,width,cover):
-  num_cans = (test_h * test_w) / coverage
-  new_num = round(num_cans)
-  print(new_num)
+  area = test_h * test_w
+
+  #round math result to nearest whole number
+  num_of_cans = math.ceil(area/coverage)
+  print(f"You will need {num_of_cans} cans of paint to cover that area.")
 
 #Write your code above this line 👆
 # Define a function called paint_calc() so that the code below works.   
